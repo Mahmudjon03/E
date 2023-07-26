@@ -1,14 +1,16 @@
+using System;
+
 namespace Calcullator;
 
 public class Calculator
-{
-    int  x;
-    int y;
-public Calculator(int x,int y)
-{     
+{            int x ;
+    public int y ;
+public Calculator(int _x,int _y)
+{    x=_x;
+       y=_y;
 }
-public int Summ(){
-    return x+y;
+public void Summ(){
+    System.Console.WriteLine( x+y);
     }
 
 public int Subtract(){
@@ -19,6 +21,8 @@ public int Multiplication(){
 }public int Division(){
     return x/y;
 }
+
 }
+
 
 
